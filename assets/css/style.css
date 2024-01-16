@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+* {
+    font-family: 'Poppins-Regular';
+}
+a {
+    text-decoration: none;
+}
+header nav{
+    padding-bottom: 10%;
+}
+body{
+    margin: 0 10%;
+}
+ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+li {
+    padding: 0 2%;
+}
+li a {
+    color: #000000;
+}
+li a:hover {
+    color: #D1884F;
+}
+li a i  {
+    margin-right: 10px;
+}
+.focused {
+    color: #D1884F;
+}
+.container{
+    display: flex;
+}
+.container-text{
+    width: 50%;
+    margin-right: auto;
+    /* text-align: justify; */
+}
+.welcome{
+    color: #3BBADB;
+}
+.intro{
+    font-size: 25px;
+    font-weight: 800;
+    color: #008AAA;
+}
+.intro span{
+    color: #D1884F;
+}
+.content{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10%;
+}
+.content a{
+    font-weight: 500;
+    color: #3BBADB;
+}
+.buttons a{
+    margin-right: 10px;
+}
+.hire{
+    color: #ffffff;
+    background-color: #008AAA;
+    border: 1px solid #008AAA;
+    padding: 2px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 2px #3BBADB6b;
+    width: 100%;
+}
+.projects{
+    color: #008AAA;
+    border: 1px solid #008AAA;
+    padding: 2px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #008AAA;
+    width: 100%;
+
+}
+.container-profile{
+    margin-left: auto;
+}
+.white-block{
+    position: relative;
+    top: 20px;
+    right: 15%;
+    background-color: #ffffff;
+    width: 15%;
+    height: 30px;
+}
+.image {
+    box-shadow: -15px 0px 0px #3BBADB;
+    border-bottom-left-radius:150px;
+}
+@media screen and (min-width :768px){
+    .mobile-view {
+        display: none;
+    }
+    .web-view{
+        display: flex;
+    }
+}
+@media screen and (max-width :767px) {
+    .mobile-view {
+        display: none;
+    }
+    .web-view{
+        display: flex;
+    }
+    body{
+        margin: 0 2%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+    li {
+        padding: 0 2px;
+    }
+}
+@media screen and (max-width :600px ) {
+    .web-view{
+        display: none;
+    }
+    .mobile-view{
+        display: block !important;
+    }
+    .container-text{
+        width: 100%;
+        margin-right: auto;
+    }
+    .container-profile{
+        margin: 0 20%;
+    }
+}
+@media screen and (max-width :400px ){
+    .web-view{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
+        margin-bottom: 5%;
+    }
+    .white-block{
+        height: 30px;
+    }
+}
+@media screen and (max-width:280px){
+    ul {
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 12px;
+    }
+}
